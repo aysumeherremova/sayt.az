@@ -914,6 +914,163 @@
   
     </div>
 </header>
+
+   
+<!-- bura calculator hissesidir aysu -->
+
+<main class="w-full mt-4 mx-auto md:w-4/5 bg-[#f8f8fa]">
+    <div class="flex lmd:flex-row flex-col md:gap-6 gap-2 pb-12 px-2 py-6 relative ">
+        <div class="w-full lmd:w-2/3 bg-white p-4">
+            <h1 class="!text-5xl lmd:text-4xl font-bold mt-4 mb-12">Qiymət Təklifi Al</h1>
+            <!-- Statik səhifələr -->
+            <div class="mb-10">
+                <h3 class="text-[#212529] text-lg font-medium">Statik səhifələr</h3>
+                <div class="bg-[#f8f8fa] mt-2 rounded-md overflow-hidden">
+                    <div class="mt-4 py-2 px-4">
+                        <p class="mb-4">Neçə statik səhifə olacaq?</p>
+                        <div class="flex justify-between items-center">
+                            <span
+                                class="bg-mainLightPurple text-white xmd:w-8 xmd:h-8 xmd:text-base w-6 h-6 text-sm rounded-md flex items-center justify-center">1</span>
+                            <input
+                                class="w-10/12 h-2 bg-gray-200 rounded-lg appearance-none cursor-pointer accent-[#a271f2]"
+                                type="range" min="100" max="2000" step="100" value="4" id="numberOfPage"
+                                oninput="calculate()">
+                            <span
+                                class="bg-mainLightPurple text-white xmd:w-8 xmd:h-8 xmd:text-base w-6 h-6 text-sm rounded-md flex items-center justify-center">20</span>
+                        </div>
+                    </div>
+                    <div
+                        class="mt-4 py-2 px-4 flex flex-col xmd:flex-row xmd:justify-between xmd:items-center gap-x-2">
+                        <p>Dizayn mürəkkəblik :</p>
+                        <div class="flex flex-col justify-center gap-4 mt-4 xmd:mt-0 xmd:w-4/6">
+                            <div
+                                class="flex justify-between items-center text-xs xmd:text-base xmd:gap-0 gap-x-4 xmd:pr-4 pr-0">
+                                <span>Sadə</span>
+                                <span>Orta</span>
+                                <span>Xüsusi</span>
+                            </div>
+                            <div>
+                                <input
+                                    class="md:ml-4 ml-0 md:w-11/12 w-full h-2 bg-gray-200 rounded-lg appearance-none cursor-pointer accent-[#a271f2]"
+                                    type="range" min="1" max="3" step="1" value="1" id="designOfPage"
+                                    oninput="calculate()">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="bg-[#4a84bf26] flex justify-between items-center mt-4 py-4 px-4">
+                        <p class="text-[#285a70]">Xərc :</p>
+                        <p class="text-mainLightPurple text-[22px] font-semibold" id="cost"> ₼ 100</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Veb sayt elaveleri -->
+            <div class="mb-10">
+                <h3 class="text-[#212529] text-lg font-medium mt-3">Veb sayt əlavələri</h3>
+                <div class="bg-[#f8f8fa] mt-2 rounded-md overflow-hidden">
+                    <div id="vebSayt" class="grid grid-cols-1 lg:grid-cols-2 gap-x-6 gap-y-6 mt-4 py-2 px-4">
+                    </div>
+                    <div class="bg-[#4a84bf26] flex justify-between items-center mt-4 py-4 px-4">
+                        <p class="text-[#285a70]">Xərc :</p>
+                        <p class="text-mainLightPurple text-[22px] font-semibold " id="vebValues"> ₼ 0</p>
+                    </div>
+                </div>
+            </div>
+  
+            <!-- Axtarış motorunun optimallaşdırılmasıkkkkkkkk -->
+            <div class="mb-10">
+                <h3 class="text-[#212529] text-lg font-medium mt-3">Axtarış motorunun optimallaşdırılması</h3>
+                <div class="bg-[#f8f8fa] mt-2 rounded-md overflow-hidden">
+                    <div id="searchOpt" class="grid xmd:grid-cols-2 grid-cols-1 gap-x-6 gap-y-4 py-4 px-4">
+                    </div>
+                    <div class="bg-[#4a84bf26] flex justify-between items-center mt-4 py-4 px-4">
+                        <p class="text-[#285a70]">Xerc :</p>
+                        <p class="text-mainLightPurple text-[22px] font-semibold" id="searchMotorValues"> ₼ 0</p>
+                    </div>
+                </div>
+            </div>
+  
+            <div class="mb-10">
+                <div>
+                    <h3 class="text-[#212529] text-lg font-medium mt-3">Elektron ticarət əlavələri</h3>
+                    <div id="ecommerce" class="grid lg:grid-cols-2 grid-cols-1 gap-x-6 gap-y-6 mt-4 py-2 px-4">
+                    </div>
+                    <div class="bg-[#4a84bf26] flex justify-between items-center mt-4 py-4 px-4">
+                        <p class="text-[#285a70]">Xərc :</p>
+                        <p class="text-mainLightPurple text-[22px] font-semibold" id="elektronCost"> ₼ 0</p>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="mb-10">
+                <h3 class="text-[#212529] text-lg font-medium mt-3">Logo dizayni</h3>
+                <div class="bg-[#f8f8fa] mt-2 rounded-md overflow-hidden">
+                    <div class="flex flex-col justify-center gap-4 sm:mt-0 py-2 px-4">
+                        <div
+                            class="flex justify-between items-center text-xs xmd:text-base sm:gap-x-0 gap-x-4 px-2">
+                            <span>Ehtiyac yoxdur</span>
+                            <span>Sade</span>
+                            <span>Xususi</span>
+                        </div>
+                        <div id="logoInp">
+                            <input
+                                class="md:ml-4 ml-0 md:w-11/12 w-full h-2 bg-gray-200 rounded-lg appearance-none cursor-pointer accent-[#a271f2]"
+                                type="range" min="0" max="200" step="100" value="1" id="logoInp"
+                                oninput="logoValues()">
+                        </div>
+                    </div>
+                    <div class="bg-[#4a84bf26] flex justify-between items-center mt-4 py-4 px-4">
+                        <p class="text-[#285a70]">Cost :</p>
+                        <p class="text-mainLightPurple text-[22px] font-semibold" id="logoCost"> ₼ 0</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+  
+        <div class="w-full lmd:w-1/3 h-fit sticky top-0">
+            <div class="flex flex-col gap-4 p-8 bg-white">
+                <p>Təklifiniz</p>
+                <p class="flex flex-row justify-between items-center">
+                    <span class="text-[#8b8b9a]">Statik səhifələr :</span>
+                    <span class="text-mainLightPurple font-bold text-lg" id="staticPages"> ₼ 0</span>
+                </p>
+                <p class="flex flex-row justify-between items-center">
+                    <span class="text-[#8b8b9a]">Əlavələr :</span>
+                    <span class="text-mainLightPurple font-bold text-lg" id="elaveler"> ₼ 0</span>
+                </p>
+                <p class="flex flex-row justify-between items-center">
+                    <span class="text-[#8b8b9a]">SEO :</span>
+                    <span class="text-mainLightPurple font-bold text-lg" id="seo"> ₼ 0</span>
+                </p>
+                <p class="flex flex-row justify-between items-center">
+                    <span class="text-[#8b8b9a]">E-ticarət :</span>
+                    <span class="text-mainLightPurple font-bold text-lg" id="eticaret"> ₼ 0</span>
+                </p>
+                <p class="flex flex-row justify-between items-center">
+                    <span class="text-[#8b8b9a]">Logo dizaynı :</span>
+                    <span class="text-mainLightPurple font-bold text-lg" id="logoId"> ₼ 0</span>
+                </p>
+                <hr>
+                <p class="flex flex-row justify-between gap-4 text-[#8b8b9a] text-base text-right items-center">
+                    <span class="text-[#8b8b9a] font-bold whitespace-nowrap">Qeyd :</span>
+                    <span class="text-base">Minimum sayt qiyməti
+                        <span class="text-mainLightPurple whitespace-nowrap" id="minValue"> ₼ 450</span>
+                    </span>
+                </p>
+            </div>
+            <div class="bg-mainLightPurple text-white text-2xl p-8 flex flex-row justify-between items-center">
+                <span>Ümumi təxmini dəyəri:</span>
+                <span id="totalDeyer" class="whitespace-nowrap font-semibold"> ₼ 450</span>
+            </div>
+            <div class="mt-6">
+                <button onclick="handlePopup()"
+                    class="bg-[#2bc48a] w-full text-white font-bold p-4 rounded-md">Saytınızı İndi Sifariş
+                    Edin</button>
+            </div>
+        </div>
+    </div>
+  
+  </main>
+  
   
 
 
