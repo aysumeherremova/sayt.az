@@ -8,8 +8,8 @@ const testimonials = [
   {
     text: "Sayt-az saytımın hazırlanmasında gözələntilərimi aşdı !",
     img: "img/people2.jpg",
-    name: "Bahman Ahmadlı",
-    role: "CEO",
+    name: "Əhməd Sadıqov",
+    role: "Bizi tərk edən qrup yoldaşı",
   },
   {
     text: "Ən yaxşı MENTOR olduğum üçün özümə minnətdaram!",
