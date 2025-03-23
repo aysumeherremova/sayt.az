@@ -58,6 +58,17 @@
             padding: 10px;
             margin: 20px;
         }
+
+        @media (max-width: 767px) {
+            #sifarisbtn {
+                display: none;
+            }
+        }
+        @media (min-width: 768px) {
+            #sifarisbtn {
+                display: block;
+            }
+        }
     </style>
 
 </head>
@@ -974,7 +985,7 @@
             <p
                 class="sm:px-4 sm:text-base sm:mb-8 font-normal leading-10  text-slate-500 lg:text-[20px] lg:px-[140px] mb-12">
                 Mütəxəssislərdən ibarət komandamız sizə müştəri dəstəyi və <br /> texniki yardım göstərmək üçün 24/7
-                hazırdır.</p><button
+                hazırdır.</p><button id="sifarisbtn"
                 class="border-[3px] border-[#A271F2] px-8 py-5 rounded-lg text-blue-600 text-[16px] leading-[10px] font-medium md:mb-[153px]">Sayt
                 Sifariş Et</button>
             <section id="targetSection">
@@ -1251,11 +1262,11 @@
                         </div>
                         <div class="lg:w-1/2 pt-10">
                             <div class="sm:mx-[5px] md:mx-0 text-start">
-                                <div 
+                                <div
                                     class="sm:w-fit sm:justify-between md:w-fit mt-4 md:justify-start inline-flex border border-input-border rounded-3xl">
                                     <span id="ayliqBtn"
                                         class="sm:w-50 w-20 py-3 sm:px-8 px-4 sm:max-w-[120px] md:py-[13px] md:w-[124px] xs:text-base text-sm flex items-center ease-out justify-center bg-mainLightPurple rounded-3xl cursor-pointer bg-mainLightPurple text-white font-medium transition-colors duration-[500ms]">Aylıq</span>
-                                    <span  id="illikBtn"
+                                    <span id="illikBtn"
                                         class="sm:w-50 w-20 py-3 sm:px-8 px-4 sm:max-w-[120px] md:py-[13px] md:w-[124px] xs:text-base text-sm flex items-center ease-out justify-center bg-mainLightPurple rounded-3xl cursor-pointer text-[#94A3B8] bg-white">İllik</span>
                                 </div>
                             </div>
@@ -1272,8 +1283,7 @@
                         <div
                             class="w-full max-w-sm p-4 bg-white border border-gray-200 rounded-lg shadow-sm sm:p-8 dark:bg-gray-800 dark:border-gray-700">
                             <div class="flex items-baseline text-gray-900 dark:text-white">
-                                <span class="text-3xl font-semibold"><i
-                                        class="fa-solid fa-manat-sign"></i>5</span>
+                                <span class="text-3xl font-semibold"><i class="fa-solid fa-manat-sign"></i>5</span>
                                 <span class="ms-1 text-xl font-normal text-dark-500 dark:text-dark-400">/ay</span>
                             </div>
                             <h5 class="mb-4 text-xl font-medium text-dark-500 dark:text-dark-400">Ekonomik</h5>
@@ -1398,8 +1408,7 @@
                         <div
                             class="w-full max-w-sm p-4 bg-white border border-gray-200 rounded-lg shadow-sm sm:p-8 dark:bg-gray-800 dark:border-gray-700">
                             <div class="flex items-baseline text-gray-900 dark:text-white">
-                                <span  class="text-3xl font-semibold"><i
-                                        class="fa-solid fa-manat-sign"></i>10</span>
+                                <span class="text-3xl font-semibold"><i class="fa-solid fa-manat-sign"></i>10</span>
                                 <span class="ms-1 text-xl font-normal text-dark-500 dark:text-dark-400">/ay</span>
                             </div>
                             <h5 class="mb-4 text-xl font-medium text-dark-500 dark:text-dark-400">Standart</h5>
@@ -1523,8 +1532,7 @@
                         <div
                             class="w-full max-w-sm p-4 bg-white border border-gray-200 rounded-lg shadow-sm sm:p-8 dark:bg-gray-800 dark:border-gray-700">
                             <div class="flex items-baseline text-gray-900 dark:text-white">
-                                <span  class="text-3xl font-semibold"><i
-                                        class="fa-solid fa-manat-sign"></i>20</span>
+                                <span class="text-3xl font-semibold"><i class="fa-solid fa-manat-sign"></i>20</span>
                                 <span class="ms-1 text-xl font-normal text-dark-500 dark:text-dark-400">/ay</span>
                             </div>
                             <h5 class="mb-4 text-xl font-medium text-dark-500 dark:text-dark-400">Professional</h5>
@@ -2028,7 +2036,7 @@
                         </div>
                     </div>
                 </div>
-                
+
                 <script src="hostinq.js"></script>
 
                 <!-- startuplar -->
