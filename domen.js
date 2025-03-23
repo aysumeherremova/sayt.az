@@ -5,7 +5,7 @@ document.getElementById("domainSearchForm").addEventListener("submit", function 
     
     if (domain === "") {
         document.getElementById("errorText").style.visibility = "visible";
-        document.getElementById("errorText").innerText = "Domen adı daxil edin!";
+        document.getElementById("errorText").innerText = "Domen adı daxil edin";
     } else {
         document.getElementById("errorText").style.visibility = "hidden";
         alert("Domain: " + domain + domainExtension);  

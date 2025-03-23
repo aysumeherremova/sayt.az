@@ -75,7 +75,7 @@
                             clip-rule="evenodd"></path>
                     </svg>
 
-                    <!-- demeli iki curdu DROPDOWN bu deskopdu -->
+                    <!-- demeli bu DESKOPT DROPDOWNDU-->
 
                     <ul id="menuDropdown" onclick="stopMenu(event)"
                         class="menu-item hidden flex-col absolute top-[2.5rem] md:py-4 lg:ml-8 md:-ml-8 -ml-3 bg-white md:min-w-[340px] 
@@ -951,11 +951,10 @@
 
 
     <main class="min-h-screen max-h-auto relative">
-        <!-- bu hisse girişdi birinci section  -->
-        <div
-            class="sm:pt-[250px] heroHeader sm:pb-[340px] sm:h-screen-minus-88 max-h-[100vh] sm:text-[48px] sm:leading-[55px] sm:tracking-[0.2px] relative flex flex-col justify-center items-center mx-auto lg:px-[20vw] lg:py-[100px] text-center text-slate-700 h-screen-minus-90">
+        <!-- Biznesinizi bizimlə rəqəmsal dünyada daha asan yoldan irəliyə apar hissessidi-->
+        <div class="sm:pt-[150px] heroHeader sm:pb-[340px] sm:h-screen-minus-88 max-h-[100vh] sm:text-[48px] sm:leading-[55px] sm:tracking-[0.2px] relative flex flex-col justify-center items-center mx-auto lg:px-[15vw] lg:py-[50px] text-center text-slate-700 h-screen-minus-90">
             <h1 class="sm:mb-4 sm:px-4 md:text-xlg lg:text-xxlg font-medium mb-8 px-10">Biznesinizi bizimlə rəqəmsal
-                dünyada <br/> <br/> <span class="sm:mx-4 md:mx-6 text-blue-600 relative lg:mx-[30px] text-5 whitespace-nowrap">daha
+                dünyada <br/> <br/> <span class="sm:mx-2 md:mx-4 text-blue-600 relative lg:mx-[15px] text-5 whitespace-nowrap">daha
                     asan<i
                         class="absolute sm:top-[-20px] sm:left-[-15px] md:left-[-18px] md:top-[-25px] lg:top-[-25px]"><img
                             alt="Home-image" loading="lazy" width="278" height="120" decoding="async" data-nimg="1"
@@ -963,17 +962,31 @@
                             src="img/easier.svg" /></i></span> yoldan irəliyə apar!</h1>
             <p
                 class="sm:px-4 sm:text-base sm:mb-8 font-normal leading-10  text-slate-500 lg:text-[20px] lg:px-[140px] mb-12">
-                Mütəxəssislərdən ibarət komandamız sizə müştəri dəstəyi və texniki yardım göstərmək üçün 24/7
+                Mütəxəssislərdən ibarət komandamız sizə müştəri dəstəyi və <br/> texniki yardım göstərmək üçün 24/7
                 hazırdır.</p><button
                 class="border-[3px] border-[#A271F2] px-8 py-5 rounded-lg text-blue-600 text-[16px] leading-[10px] font-medium md:mb-[153px]">Sayt
-                Sifariş Et</button><i class="cursor-pointer absolute bottom-10"><span class="scroll__items">
-                    <img
-                        alt="Home-image" loading="lazy" width="30" height="50" decoding="async" data-nimg="1"
-                        style="color:transparent" src="/img/check.svg" /><span
-                        class="absolute top-2 left-2 scroll__items-circle"><img alt="Home-image" loading="lazy"
-                            width="14" height="14" decoding="async" data-nimg="1" class="max-w-[14px] max-h-[14px]"
-                            style="color:transparent" src="/img/circle.svg" /></span></span></i>
-        </div>
+                Sifariş Et</button> 
+                <section id="targetSection">
+                    <i class="cursor-pointer absolute bottom-10" onclick="scrollToSection()">
+                    <span class="scroll__items">
+                        <img alt="Home-image" loading="lazy" width="30" height="50" decoding="async" data-nimg="1" style="color:transparent" src="/img/check.svg" />
+                        <span class="absolute top-2 left-2 scroll__items-circle">
+                            <img alt="Home-image" loading="lazy" width="14" height="14" decoding="async" data-nimg="1" class="max-w-[14px] max-h-[14px]" style="color:transparent" src="/img/circle.svg" />
+                        </span>
+                    </span>
+                </i>
+                </section>
+            </div>
+        
+            
+            <script>
+                function scrollToSection() {
+                    document.getElementById("targetSection").scrollIntoView({
+                        behavior: "smooth"  
+                    });
+                }
+            </script>
+        
 
         <!-- programming, sifarisi izleyin yeridi bura -->
         <section id="order-tracking"
