@@ -59,18 +59,7 @@
             margin: 20px;
         }
 
-        @media (max-width: 767px) {
-            #sifarisbtn {
-                display: none;
-            }
-        }
 
-        @media (min-width: 768px) {
-            #sifarisbtn {
-                display: block;
-            }
-        }
-        
         @media (max-width: 640px) {
             h2 {
                 font-size: 18px;
@@ -106,6 +95,59 @@
                 text-align: left;
             }
         }
+
+        @media (max-width: 1024px) {
+            h1 {
+                font-size: 28px;
+                margin-bottom: 20px;
+            }
+
+            p {
+                font-size: 14px;
+                padding-left: 20px;
+                padding-right: 20px;
+            }
+
+            #targetSection i {
+                bottom: 5%;
+            }
+
+            button {
+                padding: 10px 20px;
+                font-size: 14px;
+            }
+        }
+
+        @media (min-width: 1025px) {
+            h1 {
+                font-size: 48px;
+                margin-bottom: 30px;
+            }
+
+            p {
+                font-size: 18px;
+                padding-left: 140px;
+                padding-right: 140px;
+            }
+
+            button {
+                padding: 15px 30px;
+                font-size: 16px;
+            }
+
+            #targetSection i {
+                bottom: 10%;
+            }
+        }
+        @media (max-width: 768px) {
+                .scroll__items img{
+                    display: none;
+                }
+                #ttxt , #ttxt1{
+                    display: none;  
+                }
+
+            }
     </style>
 
 </head>
@@ -1020,9 +1062,11 @@
                             class="max-w-[110%] max-h-[110%]" style="color:transparent"
                             src="img/easier.svg" /></i></span> yoldan irəliyə apar!</h1>
             <p
-                class="sm:px-4 sm:text-base sm:mb-8 font-normal leading-10  text-slate-500 lg:text-[20px] lg:px-[140px] mb-12">
+                class="sm:px-4 sm:text-base sm:mb-8 font-normal leading-10 text-slate-500 lg:text-[20px] lg:px-[140px] mb-12">
                 Mütəxəssislərdən ibarət komandamız sizə müştəri dəstəyi və <br /> texniki yardım göstərmək üçün 24/7
-                hazırdır.</p><button id="sifarisbtn"
+                hazırdır.
+            </p>
+            <button id="sifarisbtn"
                 class="border-[3px] border-[#A271F2] px-8 py-5 rounded-lg text-blue-600 text-[16px] leading-[10px] font-medium md:mb-[153px]">Sayt
                 Sifariş Et</button>
             <section id="targetSection">
@@ -1259,11 +1303,11 @@
                                 style="visibility:hidden">*</p>
                             <div class="sm:grid sm:grid-cols-3 md:flex md:flex-row justify-between mt-8 md:gap-5"></div>
                             <div class="flex w-full mx-auto flex-col gap-2 justify-center px-2 items-center">
-                                <h2
+                                <h2 id="ttxt"
                                     class="sm:text-[22px] sm:leading-[44px] tracking-[0.1px] sm:text-center md:text-[32px] font-medium text-[#A271F2] leading-[38px] p-0">
                                     .az&nbsp;&nbsp;&nbsp;.com&nbsp;&nbsp;&nbsp;.net&nbsp;&nbsp;&nbsp;.info&nbsp;&nbsp;&nbsp;.biz&nbsp;&nbsp;&nbsp;.org
                                 </h2>
-                                <h4
+                                <h4 id="ttxt1"
                                     class="sm:text-[12px] sm:leading-[18px] tracking-[0.1px] sm:text-center md:text-[16px] font-medium text-[#A271F2] leading-[38px] p-0">
                                     <i
                                         class="fa-solid fa-manat-sign"></i>40/il&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i
