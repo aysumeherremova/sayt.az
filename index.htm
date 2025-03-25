@@ -13,9 +13,54 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
     <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="stylesheet" href="style.css">
     <script src="tailwind.js"></script>
     <style>
+        .bg-purpleGradient {
+            background-image: linear-gradient(90deg, #7028e4, #e5b2ca)
+        }
+
+        .text-mainLightPurple {
+            color: #a271f2;
+        }
+
+        .bg-mainLightPurple {
+            background-color: #a271f2;
+        }
+
+        .text-mainDarkPurple {
+            color: #300b60;
+        }
+
+        .border-mainLightPurple {
+            border-color: #a271f2;
+        }
+
+        .font-manrope {
+            font-family: Manrope, sans-serif;
+        }
+
+        #menuDropdown::-webkit-scrollbar,
+        #menuDropdown2::-webkit-scrollbar,
+        #menuDropdown3::-webkit-scrollbar,
+        #menuDropdown4::-webkit-scrollbar,
+        #menuDropdown5::-webkit-scrollbar {
+            width: 5px;
+        }
+
+        #menuDropdown::-webkit-scrollbar-track,
+        #menuDropdown2::-webkit-scrollbar-track,
+        #menuDropdown3::-webkit-scrollbar-track,
+        #menuDropdown4::-webkit-scrollbar-track,
+        #menuDropdown5::-webkit-scrollbar-track {
+            background-color: #e2e8f0;
+        }
+
+        #menuDropdown::-webkit-scrollbar-thumb,
+        #menuDropdown5::-webkit-scrollbar-thumb {
+            background-color: #a271f2;
+            border-radius: 15px;
+        }
+
         #monthly-card,
         #yearly-card {
             transition: opacity 0.5s ease-in-out;
@@ -123,19 +168,23 @@
                 font-size: 48px;
                 margin-bottom: 30px;
             }
+
             #targetSection i {
                 bottom: 10%;
             }
         }
-        @media (max-width: 768px) {
-                .scroll__items img{
-                    display: none;
-                }
-                #ttxt , #ttxt1{
-                    display: none;  
-                }
 
+        @media (max-width: 768px) {
+            .scroll__items img {
+                display: none;
             }
+
+            #ttxt,
+            #ttxt1 {
+                display: none;
+            }
+
+        }
     </style>
 
 </head>
@@ -148,7 +197,7 @@
         <nav class="sm:mx-auto relative max-w-[1920px] flex items-center justify-between p-6 lg:px-7">
             <a class="p-1.5 min-w-[70px]" href="index.htm">
                 <img src="src/img/saytaz.svg" alt="logo" width="112px" height="35px" class="text-transparent">
-            </a>  
+            </a>
             <div class="hidden lg:flex lg:gap-x-6 2xl:gap-x-16 items-center">
                 <div onclick="dropDown('menuDropdown')"
                     class="text-base relative text-mainDarkPurple font-bold flex justify-center items-center gap-[3px] cursor-pointer  hover:text-[#a271f2]">
@@ -159,9 +208,9 @@
                             d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z"
                             clip-rule="evenodd"></path>
                     </svg>
-      
+
                     <!-- demeli iki curdu DROPDOWN bu deskopdu -->
-      
+
                     <ul id="menuDropdown" onclick="stopMenu(event)"
                         class="menu-item hidden flex-col absolute top-[2.5rem] md:py-4 lg:ml-8 md:-ml-8 -ml-3 bg-white md:min-w-[340px] 
                     lg:max-w-none md:max-w-[380px] z-[99] border border-slate-200 rounded-lg box-border max-h-[500px] overflow-y-scroll ">
@@ -273,7 +322,7 @@
                             d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z"
                             clip-rule="evenodd"></path>
                     </svg>
-      
+
                     <ul id="menuDropdown2"
                         class=" menu-item hidden flex-col absolute top-[2.5rem] md:py-4 lg:ml-8 md:-ml-8 -ml-3 bg-white md:min-w-[340px]  overflow-y-scroll
                                 lg:max-w-none md:max-w-[380px] z-[99] border border-slate-200 rounded-lg box-border max-h-[500px] ">
@@ -312,7 +361,7 @@
                             d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z"
                             clip-rule="evenodd"></path>
                     </svg>
-      
+
                     <ul id="menuDropdown3"
                         class="hidden menu-item flex-col absolute top-[2.5rem] md:py-4 lg:ml-8 md:-ml-8 -ml-3 bg-white md:min-w-[340px] overflow-y-scroll
                             lg:max-w-none md:max-w-[380px] z-[99] border border-slate-200 rounded-lg box-border max-h-[500px] ">
@@ -363,7 +412,7 @@
                             d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z"
                             clip-rule="evenodd"></path>
                     </svg>
-      
+
                     <ul id="menuDropdown4"
                         class="hidden menu-item flex-col absolute top-[2.5rem] md:py-4 lg:ml-8 md:-ml-8 -ml-3 bg-white md:min-w-[340px] overflow-y-scroll
                             lg:max-w-none md:max-w-[380px] z-[99] border border-slate-200 rounded-lg box-border max-h-[500px] ">
@@ -380,7 +429,8 @@
                                     Sifarişinizi asanlıqla izləyin</p>
                             </div>
                         </div>
-                        <div class="flex items-center px-2 sm:px-8 md:pl-8 py-3 md:pr-12 lg:pr-4 hover:bg-slate-50" onclick="goToCalculator()">
+                        <div class="flex items-center px-2 sm:px-8 md:pl-8 py-3 md:pr-12 lg:pr-4 hover:bg-slate-50"
+                            onclick="goToCalculator()">
                             <div class="p-3 bg-blue-100 rounded-lg mr-4">
                                 <img src="src/img/calculator.svg" class="max-w-[28px]" width="28" height="28"
                                     style="color: transparent;" alt="">
@@ -457,7 +507,7 @@
                             d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z"
                             clip-rule="evenodd"></path>
                     </svg>
-      
+
                     <ul id="menuDropdown5"
                         class="hidden menu-item flex-col absolute top-[2.5rem] md:py-4 lg:ml-8 md:-ml-8 -ml-3 bg-white md:min-w-[340px] overflow-y-scroll
                             lg:max-w-none md:max-w-[380px] z-[99] border border-slate-200 rounded-lg box-border max-h-[500px] ">
@@ -548,7 +598,7 @@
                     </ul>
                 </div>
             </div>
-      
+
             <div class="flex space-x-4 items-center justify-center">
                 <div class="relative">
                     <button onclick="toggleDropdown('currencyMenuMain')" class="flex items-center bg-white">
@@ -565,7 +615,7 @@
                         </div>
                     </div>
                 </div>
-      
+
                 <div class="relative">
                     <button onclick="toggleDropdown('languageMenuMain')" class="flex items-center bg-white ">
                         <img width="24" height="16" src="src/img/az (1).png" alt="AZ Flag">
@@ -581,7 +631,7 @@
                         </div>
                     </div>
                 </div>
-      
+
                 <div class="flex xl:hidden">
                     <button onclick="navbar()" class="inline-flex items-center justify-center">
                         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
@@ -591,7 +641,7 @@
                         </svg>
                     </button>
                 </div>
-      
+
                 <div class="font-semibold leading-6 min-w-[152px] hidden xl:block">
                     <button type="button"
                         class="pt-[.56rem] pb-[.56rem] text-white bg-purpleGradient text-center px-6 w-full  rounded-[8px] tracking-[.1px] font-bold opacity-100">Qiymət
@@ -601,13 +651,13 @@
                     <button type="button"
                         class="pt-[.56rem] pb-[.56rem] text-mainLightPurple border border-mainLightPurple text-center px-6 w-full  rounded-[8px] tracking-[.1px] font-bold opacity-100">Daxil
                         olun</button>
-      
+
                 </div>
-      
+
             </div>
-        </nav> 
-      
-      
+        </nav>
+
+
         <!-- bu mobiledi -->
         <div id="menu"
             class="fixed top-0 right-0 sm:px-6 px-6 sm:py-6 py-4 max-w-sm transform translate-x-full w-full h-[100vh] bg-white z-10 xl:hidden">
@@ -621,7 +671,7 @@
                     class="text-base relative text-mainDarkPurple font-bold flex items-center gap-[3px] cursor-pointer group mx-3 px-3 py-3 hover:bg-gray-50 hover:text-[#a271f2] leading-7">
                     <span class="mr-2px whitespace-nowrap ">Veb sayt</span>
                     <i class="fa-solid fa-chevron-down w-5 h-5"></i>
-      
+
                     <ul id="menuDropdown" onclick="stopMenu(event)"
                         class="hidden menu-item flex-col absolute top-[2.5rem] md:py-4 py-2 lg:ml-8 md:-ml-8 -ml-3 bg-white md:min-w-[340px] 
                     lg:max-w-none md:max-w-[380px] z-[99] border border-slate-200 rounded-lg box-border max-h-[500px] overflow-y-scroll ">
@@ -994,7 +1044,7 @@
                         </div>
                     </div>
                 </div>
-      
+
                 <div class="relative">
                     <button onclick="toggleDropdown('languageMenu')" class="flex items-center bg-white ">
                         <img width="24" height="16" src="src/img/az (1).png" alt="AZ Flag">
@@ -1019,9 +1069,9 @@
                 <button type="button"
                     class="pt-[.56rem] pb-[.56rem] text-mainLightPurple border border-mainLightPurple text-center px-6 w-full  rounded-[8px] tracking-[.1px] font-bold opacity-100">Daxil
                     olun</button>
-      
+
             </div>
-      
+
         </div>
     </header>
 
@@ -1339,8 +1389,8 @@
                         <!-- birinci -->
 
                         <div
-                        class="w-full max-w-sm p-4 bg-white border border-gray-200 rounded-lg shadow-sm sm:p-8 dark:bg-gray-800 dark:border-gray-700 hover:border-violet-500 hover:shadow-lg">
-                        <div class="flex items-baseline text-gray-900 dark:text-white">
+                            class="w-full max-w-sm p-4 bg-white border border-gray-200 rounded-lg shadow-sm sm:p-8 dark:bg-gray-800 dark:border-gray-700 hover:border-violet-500 hover:shadow-lg">
+                            <div class="flex items-baseline text-gray-900 dark:text-white">
                                 <span class="text-3xl font-semibold"><i class="fa-solid fa-manat-sign"></i>5</span>
                                 <span class="ms-1 text-xl font-normal text-dark-500 dark:text-dark-400">/ay</span>
                             </div>
@@ -1464,8 +1514,8 @@
                         <!-- 2ci -->
 
                         <div
-                        class="w-full max-w-sm p-4 bg-white border-2 border-violet-500 rounded-lg shadow-sm sm:p-8 dark:bg-gray-800 dark:border-gray-700 hover:border-violet-500 hover:shadow-lg ">
-                        <div class="flex items-baseline text-gray-900 dark:text-white">
+                            class="w-full max-w-sm p-4 bg-white border-2 border-violet-500 rounded-lg shadow-sm sm:p-8 dark:bg-gray-800 dark:border-gray-700 hover:border-violet-500 hover:shadow-lg ">
+                            <div class="flex items-baseline text-gray-900 dark:text-white">
                                 <span class="text-3xl font-semibold"><i class="fa-solid fa-manat-sign"></i>10</span>
                                 <span class="ms-1 text-xl font-normal text-dark-500 dark:text-dark-400">/ay</span>
                             </div>
@@ -1588,8 +1638,8 @@
 
                         <!-- 3cü -->
                         <div
-                        class="w-full max-w-sm p-4 bg-white border border-gray-200 rounded-lg shadow-sm sm:p-8 dark:bg-gray-800 dark:border-gray-700 hover:border-violet-500 hover:shadow-lg">
-                        <div class="flex items-baseline text-gray-900 dark:text-white">
+                            class="w-full max-w-sm p-4 bg-white border border-gray-200 rounded-lg shadow-sm sm:p-8 dark:bg-gray-800 dark:border-gray-700 hover:border-violet-500 hover:shadow-lg">
+                            <div class="flex items-baseline text-gray-900 dark:text-white">
                                 <span class="text-3xl font-semibold"><i class="fa-solid fa-manat-sign"></i>20</span>
                                 <span class="ms-1 text-xl font-normal text-dark-500 dark:text-dark-400">/ay</span>
                             </div>
@@ -1721,8 +1771,8 @@
                         <!-- birinci -->
 
                         <div
-    class="w-full max-w-sm p-4 bg-white border border-gray-200 rounded-lg shadow-sm sm:p-8 dark:bg-gray-800 dark:border-gray-700 hover:border-violet-500 hover:shadow-lg">
-    <div class="flex items-baseline text-gray-900 dark:text-white">
+                            class="w-full max-w-sm p-4 bg-white border border-gray-200 rounded-lg shadow-sm sm:p-8 dark:bg-gray-800 dark:border-gray-700 hover:border-violet-500 hover:shadow-lg">
+                            <div class="flex items-baseline text-gray-900 dark:text-white">
                                 <span class="text-3xl font-semibold"><i class="fa-solid fa-manat-sign"></i>60</span>
                                 <span class="ms-1 text-xl font-normal text-dark-500 dark:text-dark-400">/il</span>
                             </div>
@@ -1846,8 +1896,8 @@
                         <!-- 2ci -->
 
                         <div
-                        class="w-full max-w-sm p-4 bg-white border-2 border-violet-500 rounded-lg shadow-sm sm:p-8 dark:bg-gray-800 dark:border-gray-700 hover:border-violet-700 hover:border-violet-500 hover:shadow-lg">
-                        <div class="flex items-baseline text-gray-900 dark:text-white">
+                            class="w-full max-w-sm p-4 bg-white border-2 border-violet-500 rounded-lg shadow-sm sm:p-8 dark:bg-gray-800 dark:border-gray-700 hover:border-violet-700 hover:border-violet-500 hover:shadow-lg">
+                            <div class="flex items-baseline text-gray-900 dark:text-white">
                                 <span class="text-3xl font-semibold"><i class="fa-solid fa-manat-sign"></i>120</span>
                                 <span class="ms-1 text-xl font-normal text-dark-500 dark:text-dark-400">/il</span>
                             </div>
@@ -1971,8 +2021,8 @@
                         <!-- 3cü -->
 
                         <div
-                        class="w-full max-w-sm p-4 bg-white border border-gray-200 rounded-lg shadow-sm sm:p-8 dark:bg-gray-800 dark:border-gray-700 hover:border-violet-500 hover:shadow-lg">
-                        <div class="flex items-baseline text-gray-900 dark:text-white">
+                            class="w-full max-w-sm p-4 bg-white border border-gray-200 rounded-lg shadow-sm sm:p-8 dark:bg-gray-800 dark:border-gray-700 hover:border-violet-500 hover:shadow-lg">
+                            <div class="flex items-baseline text-gray-900 dark:text-white">
                                 <span class="text-3xl font-semibold"><i class="fa-solid fa-manat-sign"></i>240</span>
                                 <span class="ms-1 text-xl font-normal text-dark-500 dark:text-dark-400">/il</span>
                             </div>
